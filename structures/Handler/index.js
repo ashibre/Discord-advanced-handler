@@ -26,33 +26,6 @@ class EventHandler {
     }
 }
 
-class SlashCommandHandler {
-    constructor(client) {
-        this.client = client;
-        this.getFiles("slashCommands");
-    }
-
-    getFiles(path) {
-        fs.readdir(`${path}`, (err, files) => {
-            if (err) throw err;
-            files.forEach(file => {
-                if (file.endsWith(".disabled")) return;
-                if (file.endsWith(".js"))
-                    return this.registerFile(`${path}/${file}`, this.client);
-                if (!file.includes("."))
-                    this.getFiles(`${path}/${file}`);
-            })
-        })
-    }
-
-    registerFile(file) {
-        const pull = require(`../${file}`);
-        if (pull.name)
-            this.client.slashCommand.set(pull.name.toLowerCase(), pull);
-            delete require.cache[require.resolve(`../${file}`)];
-    }
-}
-
 class CommandHandler {
     constructor(client) {
         this.client = client;
@@ -82,8 +55,4 @@ class CommandHandler {
     }
 }
 
-module.exports = {
-    EventHandler,
-    CommandHandler,
-    SlashCommandHandler
-}
+module.exports = { EventHandler, CommandHandler }
