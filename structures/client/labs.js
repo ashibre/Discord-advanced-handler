@@ -1,5 +1,5 @@
 const { Collection, Client } = require('discord.js'),
-   { CommandHandler, EventHandler, SlashCommandHandler } = require('../Handler'),
+   { CommandHandler, EventHandler } = require('../Handler'),
    { Sequelize, DataTypes } = require('sequelize'),
    { Managers } = require('../Managers'),
    config = require('../../config'),
