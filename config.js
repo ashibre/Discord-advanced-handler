@@ -1,7 +1,7 @@
 module.exports = {
    token: 'token here',
    prefix:'!',
-   ownerId : "254595950553595905",
+   ownerId : "942459622718074900",
 
    database: { 
        name: 'test', 
