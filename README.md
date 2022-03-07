@@ -1,5 +1,5 @@
 This advanced handler was created by ashi.
-This handler is working with the module ``sequelize`` for database (me i'm using sql)
+This database handler is working with the module ``sequelize`` (me i'm using sql)
 
 **How to start ?**
 
