@@ -13,5 +13,5 @@ Don't forget to change the database connection properties too.
 **Final step :** 
 `node .` in your console to start the bot.
 
-**For any support you can find me here (discord): world#1337**
+**For any support you can find me here (discord): world#8931**
 (i'm french but i can answer to english too)
