@@ -1,4 +1,4 @@
-This advanced handler was update by ashi and created by takefy.
+This advanced handler was update by me and created by takefy.
 This database handler is working with the module ``sequelize`` (me i'm using sql)
 
 **How to start ?**
